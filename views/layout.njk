@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>            
+
+        {% block head %}
+        <title>Lucas Barroso</title>   
+
+        {% endblock %}
+
+
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="links">
+                <a href="/">Sobre</a>
+                <a href="/portfolio" >Vídeos</a>
+            </div>
+        </header>
+
+        {% block content %}
+
+
+        {% endblock %}
+       
+    </body>
+
+</html>
