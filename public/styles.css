@@ -1,175 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --color-green: #50fa7b;
-    --color-purple: #7159c1
+    --primary-color:  #7159c1
 }
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     border: 0;
 }
+
 body {
-    background: #282a36; 
-    font-family: 'Recursive', sans-serif;     
-    color: white;          
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
 }
+
 header {
-    padding: 32px;
-    border-bottom: 1px solid #333;
-    background: rgba(0, 0, 0, 0.1)
-}
-.links {
-    text-align: center;
-}
-.links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 28px;
-    margin: 0 16px;
-}
-.links a:hover {
-    color: var(--color-green);
-    transition: color 700ms;
-}
-#wrapper {
-    text-align: center;
-    padding: 32px;
-}
-#wrapper img {
-    border-radius: 50%;
-    border: 5px solid var(--color-green);
-    margin-bottom: 32px;
-    height: 300px;
-}
-#wrapper h1 {
-    font-size: 42px;
-    line-height: 52px;
-    font-weight: bold;
-}
-#wrapper h2 {
-    font-size: 24px;
-    line-height: 34px;
-    font-weight: normal;
-    margin-top: 8px;
-    opacity: 0.8;
-}
-#wrapper p {
-    max-width: 500px; 
-    margin: 32px auto;
-    font-size: 24px;
-    line-height: 34px;
-}
-#wrapper p a{
-    color: var(--color-green);
-}
-
-#links-footer a {
-    border-bottom: 1px solid var(--color-green);
-}
-
-/*==== CARDS ====*/
-.cards {
-    max-width: 800px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-.card {
-    background-color: var(--color-purple);
-    cursor: pointer;
-    display: grid;
-}
-.card_image-container img {
+    background-color: white;
     width: 100%;
-}
-.card_content,
-.card_info {
-    padding: 24px;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.card_info{
+.links {
+    font-size: 22px;
+}
+
+.links a + a {
+    margin-left: 32px;
+    
+}
+
+.links a {    
+    text-decoration: none;
+    color: #7777;
+    position: relative;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.links a:hover {
+    color: var(--primary-color);
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 700ms ease-in-out; 
+}
+
+/*==== CARD ====*/
+.card {
+    background-color: white;
+    width: 800px;
+    height: 400px;
+
+    margin: 45px auto;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-.card_price {
-    background-color: var(--color-purple);
-    filter: brightness(90%);
-    padding: 5px 20px;
-    border-radius: 20px;
-    text-align: center;
+
+    box-shadow: px 2px 6px -2px  rgba(0, 0, 0, 0.4);   
+
+    animation-name: up 300ms ease;
 }
 
-
-/*==== MODAL ====*/
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-.modal {
-    background-color: black;
-    width: 90%;
-    height: 90%;
-    margin: 5vh auto;
-    position: relative;
-}
-.modal .close-modal {
-    color: white;
-    position: absolute;
-    right: 8px;
-    top: 8px; 
-    cursor: pointer;
-}
-/*==== MODAL.ACTIVE ====*/
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
+@keyframes up {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-iframe {
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    top: 5%;
-}
-
-/*==== FEATURED ==== */
-.featured-wrapper.card_image-container{
-    position: relative;
-}
-.featured {
-    position: absolute;
-    background: #f7d05f;
-    color: #111;
-    padding: 2px 8px;
-    right: 5px;
-    border-radius: 16px;
-    top: -11px;
-}
-
-/* ==== VIDEO PAGE ====*/
- .video {
-     max-width: 800px;
-     margin: 0 auto;
-
- }
-.card_video-container {
-    position: relative;
-    padding-top: 62.5%;
-}
-
-.card_video-container iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-}
