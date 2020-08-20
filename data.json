@@ -1,14 +1,6 @@
 {
   "instructors": [
     {
-      "id": 1,
-      "avatar_url": "http://google.com",
-      "name": "Lucas de Mauricio Barroso",
-      "birth": "1995-03-19",
-      "gender": "M",
-      "services": "Basquete"
-    },
-    {
       "avatar_url": "https://source.unsplash.com/collection/3465564/500X500",
       "birth": "1990-05-20",
       "gender": "M",
@@ -135,13 +127,8 @@
       "name": "Lebron James 23"
     },
     {
-      "avatar_url": "https://source.unsplash.com/collection/3465564/500X500",
-      "birth": "1996-12-05",
-      "gender": "F",
-      "services": "Basquete, dunks",
-      "created_at": 1597772494312,
-      "id": 16,
-      "name": "Lebron James 23"
+      "created_at": 1597891256045,
+      "id": 17
     }
   ]
 }
