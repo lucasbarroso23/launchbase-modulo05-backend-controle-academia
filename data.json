@@ -1,5 +1,17 @@
 {
-  "members": [],
+  "members": [
+    {
+      "avatar_url": "https://avatars0.githubusercontent.com/u/55262061?s=460&u=afd5e36a1928c45b184a72081834fe19a88b7046&v=4",
+      "name": "Lucas de Mauricio Barroso",
+      "email": "lucasbarroso23@gmail.com",
+      "birth": 795571200000,
+      "gender": "M",
+      "blood": "A-",
+      "weight": "120",
+      "height": "177",
+      "id": 1
+    }
+  ],
   "instructors": [
     {
       "avatar_url": "https://i.pinimg.com/736x/b9/93/eb/b993eb9d72c91a3d843943c5641c2fb2.jpg",
