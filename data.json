@@ -48,24 +48,6 @@
       "created_at": 1597687419454,
       "id": 4,
       "name": "Klay Thompson"
-    },
-    {
-      "avatar_url": "https://elnuevodiario.com.do/wp-content/uploads/2020/01/Lillard-establece-marca-equipo-con-61-puntos.jpg",
-      "birth": 592099200000,
-      "gender": "M",
-      "services": "3-point-shot, free throws",
-      "created_at": 1597925253704,
-      "id": 5,
-      "name": "Dame Dolla"
-    },
-    {
-      "avatar_url": "https://www.amny.com/wp-content/uploads/2020/05/kevin_durant_nets-scaled.jpg",
-      "birth": 646444800000,
-      "gender": "M",
-      "services": "3-point-shot, free throws",
-      "created_at": 1597927821110,
-      "id": 6,
-      "name": "Kevin Durant"
     }
   ]
 }
