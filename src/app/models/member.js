@@ -60,6 +60,18 @@ module.exports = {
                 callback(results.rows[0])
         })
     },
+    findBy(filter, callback) {
+        db.query(`
+        select *
+        from members 
+        WHERE members.name ILIKE '%${filter}%'
+        ORDER by name ASC
+        `, function(err, results){
+            if(err)  throw `Database Error! ${err}`
+
+        callback(results.rows)
+        })
+    },
     update(data, callback) {
         const query = `
         UPDATE members SET
